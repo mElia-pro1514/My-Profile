@@ -140,7 +140,7 @@ p {
   }
 }
 
-  @media (width >=1500px) {
+  @media (width >=2000px) {
     #root {
       gap: 200px;
     }

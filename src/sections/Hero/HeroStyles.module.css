@@ -127,7 +127,7 @@
     max-width: 35ch;
   }
 }
-@media (width >= 1500px) {
+@media (width >= 2000px) {
   .colorModeContainer{
     width: 30%;
   }

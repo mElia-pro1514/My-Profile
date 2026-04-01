@@ -3,7 +3,7 @@ import styles from './FooterStyles.module.css';
 
 function Footer() {
   return (
-    <section id="footer" className={`${styles.container} bg-gray-900 mt`}>
+    <section id="footer" className={`${styles.container} bg-gray-900 xl:mt-14`}>
       <p className=" flex items-center justify-center text-center gap-3">
         <BiCopyright/> 2024 Muhammad Amir.
         All rights reserved.

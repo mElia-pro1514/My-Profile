@@ -30,7 +30,7 @@
     color: #489feb;
     transition: all ease-in-out .3s;
 }
-@media (width >1500px) {
+@media (width >2000px) {
     .icons .links{
         font-size: 2.6rem;
     }

@@ -10,7 +10,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <HashRouter>
-      <main id='mainbody' className='bg-gray-950 z-10 h-auto text-center'>
+      <main id='mainbody' className='bg-gray-950 z-10 h-auto text-center 2xl:mt-16'>
         <Navbar />
         <section className='main'>
           <Routes>

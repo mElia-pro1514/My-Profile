@@ -70,7 +70,7 @@ input[type='submit']:active {
   }
 }
 @media (width >= 800px) {
-  textarea,
+  /* textarea,
   input:not([type='submit']) {
     width: 600px;
     font-size: 20px;
@@ -80,7 +80,7 @@ input[type='submit']:active {
   }
   form {
     gap: 40px;
-  }
+  } */
 }
 
 .container {
@@ -172,7 +172,7 @@ input[type='submit']:active {
 
 
 @media (width >= 1400px) {
-  textarea,
+  /* textarea,
   input:not([type='submit']) {
     width: 900px;
   }
@@ -183,5 +183,5 @@ input[type='submit']:active {
   textarea::placeholder{
     font-weight: 600;
     font-size: 25px;
-  }
+  } */
 }

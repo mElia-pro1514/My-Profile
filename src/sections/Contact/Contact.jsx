@@ -40,7 +40,7 @@ function Contact() {
     <section className="pt-10 pb-8 px-6  mx-auto  text-center w-full">
       <h1 className="text-3xl mt-12 lg:mt-20 font-semibold text-gray-100 mb-8">Contact ME</h1>
       
-      <form onSubmit={sendEmail} className=" relative flex items-center justify-center flex-col gap-6 mx-auto w-[95%] sm:w-[85%] md:w-[50%] 2xl:w-[40%] pt-8">
+      <form onSubmit={sendEmail} className=" relative flex items-center justify-center flex-col gap-6 mx-auto w-[95%] sm:w-[85%] md:w-[50%] 2xl:w-[60%] pt-8">
         
         <div className=' w-full'>
           <label htmlFor="name" className="sr-only ">Name</label>
@@ -50,7 +50,7 @@ function Contact() {
             id="name"
             placeholder="Name"
             required
-            className="w-full h-12 2xl:h-20  px-4 2xl:text-3xl placeholder:2xl:text-3xl rounded-lg bg-transparent text-gray-200 border border-gray-700 focus:border-gray-500 focus:outline-none transition"
+            className="w-full h-12 2xl:h-14  px-4 2xl:text-xl placeholder:2xl:text-xl  rounded-lg bg-transparent text-gray-200 border border-gray-700 focus:border-gray-500 focus:outline-none transition"
           />
         </div>
 
@@ -62,7 +62,7 @@ function Contact() {
             id="email"
             placeholder="Email"
             required
-            className="w-full h-12 2xl:h-20  px-4 2xl:text-3xl placeholder:2xl:text-3xl rounded-lg bg-transparent text-gray-200 border border-gray-700 focus:border-gray-500 focus:outline-none transition"
+            className="w-full h-12 2xl:h-14  px-4 2xl:text-xl placeholder:2xl:text-xl  rounded-lg bg-transparent text-gray-200 border border-gray-700 focus:border-gray-500 focus:outline-none transition"
           />
         </div>
 
@@ -73,13 +73,13 @@ function Contact() {
             id="message"
             placeholder="Message"
             required
-            className="w-full h-40 px-4 2xl:h-[25rem] 2xl:text-3xl  py-2 placeholder:2xl:text-3xl rounded-lg bg-transparent text-gray-200 border border-gray-700 focus:border-gray-500 focus:outline-none transition resize-none"
+            className="w-full h-40 px-4 2xl:h-[15rem] 2xl:text-xl  py-2 placeholder:2xl:text-xl rounded-lg bg-transparent text-gray-200 border border-gray-700 focus:border-gray-500 focus:outline-none transition resize-none"
           ></textarea>
         </div>
 
        
           {status && (
-          <div className={`flex  items-center gap-3 justify-center  rounded-lg text-[16px] font-light transition-opacity duration-500 2xl:text-[30px]
+          <div className={`flex  items-center gap-3 justify-center  rounded-lg text-[16px] font-light transition-opacity duration-500 
             ${status.includes('success') ? 'text-green-500  ' : 'text-red-500'}
           `}>
             {status.includes('success') ? <><div><FaRegCircleCheck/></div>
@@ -90,7 +90,7 @@ function Contact() {
         <button
           type="submit"
           disabled={isSending}
-          className={`w-40 h-12 2xl:h-[5rem] 2xl:w-[20rem] mt-2 mx-auto 2xl:text-2xl rounded-lg font-semibold text-gray-100 transition-all duration-200
+          className={`w-40 h-12 mt-2 mx-auto 2xl:text-2xl rounded-lg font-semibold text-gray-100 transition-all duration-200
             ${isSending ? 'bg-gray-700 cursor-wait' : 'bg-blue-600 hover:bg-blue-700'}
           `}
         >
